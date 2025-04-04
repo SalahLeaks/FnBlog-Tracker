@@ -91,12 +91,11 @@ def build_embed(post, category=""):
     """
     Build a discord.Embed object from a blog post with the following modifications:
       - The title is plain (no hyperlink) and removes "the competitive Fortnite team" text.
-      - The description is omitted if it contains weird formatting (e.g. '<p style=' occurrences).
+      - The description is only set if a proper description is available.
       - The embed includes two images:
            * Thumbnail (top right) from the API's "image" field if it contains "576x576".
            * Main image from the API's "trendingImage" field.
-      - The Author is added as a field below the description. If no description exists,
-        then the Author is added as the embed description.
+      - The Author is always added as a standard field with the field name "Author".
       - The "Category" footer is removed.
     """
     # Title (remove unwanted text)
@@ -111,7 +110,7 @@ def build_embed(post, category=""):
         if description and len(description) > 1000:
             description = description[:997] + "..."
     
-    # Remove description if it contains weird formatting like <p style=
+    # Remove description if it contains unwanted formatting like <p style=
     if description and "<p style=" in description:
         description = None
 
@@ -127,15 +126,14 @@ def build_embed(post, category=""):
     
     # Create embed without hyperlink on title
     embed = discord.Embed(title=title, color=0)
+    
+    # Set description only if a proper description exists.
     if description:
         embed.description = description
-        # Add Author as a field below description
-        author = post.get("author") or "Unknown"
-        embed.add_field(name="Author", value=author, inline=False)
-    else:
-        # If no description, set Author as the description
-        author = post.get("author") or "Unknown"
-        embed.description = f"Author: {author}"
+
+    # Always add Author as a separate field with a bold field title.
+    author = post.get("author") or "Unknown"
+    embed.add_field(name="Author", value=author, inline=False)
     
     # Set the thumbnail image (top right) from the "image" field if it contains "576x576"
     image_url = post.get("image")
