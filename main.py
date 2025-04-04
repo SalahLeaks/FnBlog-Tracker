@@ -30,7 +30,7 @@ NORMAL_API = "https://www.fortnite.com/api/blog/getPosts?category=&locale=en&off
 DATA_FILE = "old_data.json"
 
 # Delay in seconds between sending each message (if needed)
-MESSAGE_DELAY = 5
+MESSAGE_DELAY = 2
 
 def load_old_data():
     if os.path.exists(DATA_FILE):
