@@ -18,9 +18,10 @@ logging.basicConfig(
     ]
 )
 
-# Replace with your Discord bot token and target channel ID
+# Replace with your Discord bot token, target channel ID, and role ID
 BOT_TOKEN = "YOUR_BOT_TOKEN"
 TARGET_CHANNEL_ID = YOUR_CHANNEL_ID  # Replace with your channel ID as an integer
+ROLE_ID = YOUR_ROLE_ID  # Replace with the role ID you want to ping as an integer
 
 # API endpoints for Competitive and Normal blog posts
 COMPETITIVE_API = "https://www.fortnite.com/competitive/api/blog/getPosts?offset=0&category=&locale=en&rootPageSlug=news&postsPerPage=0"
@@ -203,10 +204,16 @@ class BlogMonitorBot(discord.Client):
 
         if new_embeds:
             logging.info("Found %d new posts. Sending messages to channel.", len(new_embeds))
-            for embed, delay in new_embeds:
+            # Ping the role only once if there is more than one embed
+            ping_once = len(new_embeds) > 1
+            for idx, (embed, delay) in enumerate(new_embeds):
                 try:
-                    # Send only the embed message without additional text
-                    await self.channel.send(embed=embed)
+                    if idx == 0 and ping_once:
+                        # Send the role mention in the same message as the first embed
+                        content = f"<@&{ROLE_ID}>"
+                        await self.channel.send(content=content, embed=embed)
+                    else:
+                        await self.channel.send(embed=embed)
                     logging.info("Sent a new blog post update.")
                     await asyncio.sleep(delay)
                 except Exception as e:
