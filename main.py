@@ -18,9 +18,10 @@ logging.basicConfig(
     ]
 )
 
-# Replace with your Discord bot token and target channel ID
-BOT_TOKEN = "YOUR_BOT_TOKEN"
-TARGET_CHANNEL_ID = YOUR_CHANNEL_ID  # Replace with your channel ID as an integer
+
+BOT_TOKEN = "YOURS"
+TARGET_CHANNEL_ID = YOURS
+PING_USER_ID  =   YOURS
 
 # API endpoints for Competitive and Normal blog posts
 COMPETITIVE_API = "https://www.fortnite.com/competitive/api/blog/getPosts?offset=0&category=&locale=en&rootPageSlug=news&postsPerPage=0"
@@ -206,7 +207,7 @@ class BlogMonitorBot(discord.Client):
             for embed, delay in new_embeds:
                 try:
                     # Send only the embed message without additional text
-                    await self.channel.send(embed=embed)
+                    await self.channel.send(content=f"<@{PING_USER_ID}>", embed=embed)
                     logging.info("Sent a new blog post update.")
                     await asyncio.sleep(delay)
                 except Exception as e:
