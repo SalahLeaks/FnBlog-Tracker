@@ -1,0 +1,303 @@
+2025-06-01 18:09:52,060 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-06-01 18:09:52,060 - DEBUG - Loaded old data from old_data.json
+2025-06-01 18:09:52,060 - DEBUG - Using selector: EpollSelector
+2025-06-01 18:09:52,061 - INFO - logging in using static token
+2025-06-01 18:09:53,615 - INFO - Shard ID None has connected to Gateway (Session ID: 894d34e3c9e9145fbcc0eec8450ec012).
+2025-06-01 18:09:55,629 - INFO - Bot is ready and logged in as Fortnite-BOT#8111
+2025-06-01 18:09:55,629 - INFO - Found target channel: general
+2025-06-01 18:09:55,629 - DEBUG - Polling APIs for new posts.
+2025-06-01 18:09:55,633 - DEBUG - Fetching posts from https://www.fortnite.com/competitive/api/blog/getPosts?offset=0&category=&locale=en&rootPageSlug=news&postsPerPage=0
+2025-06-01 18:09:55,634 - DEBUG - Starting new HTTPS connection (1): www.fortnite.com:443
+2025-06-01 18:09:56,432 - DEBUG - https://www.fortnite.com:443 "GET /competitive/api/blog/getPosts?offset=0&category=&locale=en&rootPageSlug=news&postsPerPage=0 HTTP/1.1" 200 None
+2025-06-01 18:09:56,464 - DEBUG - Fetched 13 posts from https://www.fortnite.com/competitive/api/blog/getPosts?offset=0&category=&locale=en&rootPageSlug=news&postsPerPage=0
+2025-06-01 18:09:56,468 - DEBUG - Fetching posts from https://www.fortnite.com/api/blog/getPosts?category=&locale=en&offset=0&postsPerPage=0&rootPageSlug=blog&sessionInvalidated=true
+2025-06-01 18:09:56,468 - DEBUG - Starting new HTTPS connection (1): www.fortnite.com:443
+2025-06-01 18:09:56,915 - DEBUG - https://www.fortnite.com:443 "GET /api/blog/getPosts?category=&locale=en&offset=0&postsPerPage=0&rootPageSlug=blog&sessionInvalidated=true HTTP/1.1" 200 None
+2025-06-01 18:09:56,924 - DEBUG - Fetched 13 posts from https://www.fortnite.com/api/blog/getPosts?category=&locale=en&offset=0&postsPerPage=0&rootPageSlug=blog&sessionInvalidated=true
+2025-06-01 18:09:56,927 - DEBUG - Fetching posts from https://create.fortnite.com/api/cms/v1/articles/
+2025-06-01 18:09:56,927 - DEBUG - Starting new HTTPS connection (1): create.fortnite.com:443
+2025-06-01 18:09:57,987 - DEBUG - https://create.fortnite.com:443 "GET /api/cms/v1/articles/ HTTP/1.1" 200 92941
+2025-06-01 18:09:58,231 - DEBUG - Fetched 13 posts from https://create.fortnite.com/api/cms/v1/articles/
+2025-06-01 18:09:58,232 - DEBUG - Determined post id: b64afc8c-2e79-41d9-9595-ed5d3b5e4de8
+2025-06-01 18:09:58,232 - DEBUG - New or updated competitive post detected: b64afc8c-2e79-41d9-9595-ed5d3b5e4de8
+2025-06-01 18:09:58,232 - DEBUG - Determined post id: b64afc8c-2e79-41d9-9595-ed5d3b5e4de8
+2025-06-01 18:09:58,232 - DEBUG - Built embed for post id b64afc8c-2e79-41d9-9595-ed5d3b5e4de8 with title 'Elite Zadie Ranked Cups - May 2025 - Official Rules' (Category: Competitive)
+2025-06-01 18:09:58,232 - DEBUG - Determined post id: c080af4b-1c30-4199-bc3e-ded301573ee1
+2025-06-01 18:09:58,233 - DEBUG - New or updated competitive post detected: c080af4b-1c30-4199-bc3e-ded301573ee1
+2025-06-01 18:09:58,233 - DEBUG - Determined post id: c080af4b-1c30-4199-bc3e-ded301573ee1
+2025-06-01 18:09:58,233 - DEBUG - Built embed for post id c080af4b-1c30-4199-bc3e-ded301573ee1 with title 'Fortnite Duos Console Victory Cash Cups - May 2025 - Official Rules' (Category: Competitive)
+2025-06-01 18:09:58,233 - DEBUG - Determined post id: d8ebb6d1-e10a-4fd2-bb11-1a0860ff42b9
+2025-06-01 18:09:58,233 - DEBUG - New or updated competitive post detected: d8ebb6d1-e10a-4fd2-bb11-1a0860ff42b9
+2025-06-01 18:09:58,233 - DEBUG - Determined post id: d8ebb6d1-e10a-4fd2-bb11-1a0860ff42b9
+2025-06-01 18:09:58,233 - DEBUG - Built embed for post id d8ebb6d1-e10a-4fd2-bb11-1a0860ff42b9 with title 'FNCS Showdown Cups - May 2025 - Official Rules' (Category: Competitive)
+2025-06-01 18:09:58,233 - DEBUG - Determined post id: 38986877-20ab-418e-953f-a97c9174d5c2
+2025-06-01 18:09:58,233 - DEBUG - New or updated competitive post detected: 38986877-20ab-418e-953f-a97c9174d5c2
+2025-06-01 18:09:58,234 - DEBUG - Determined post id: 38986877-20ab-418e-953f-a97c9174d5c2
+2025-06-01 18:09:58,234 - DEBUG - Built embed for post id 38986877-20ab-418e-953f-a97c9174d5c2 with title 'Fortnite: GALACTIC BATTLE Competitive Details' (Category: Competitive)
+2025-06-01 18:09:58,234 - DEBUG - Determined post id: fef7c779-57b5-4fcb-8062-1dc1b3421548
+2025-06-01 18:09:58,234 - DEBUG - New or updated competitive post detected: fef7c779-57b5-4fcb-8062-1dc1b3421548
+2025-06-01 18:09:58,234 - DEBUG - Determined post id: fef7c779-57b5-4fcb-8062-1dc1b3421548
+2025-06-01 18:09:58,234 - DEBUG - Built embed for post id fef7c779-57b5-4fcb-8062-1dc1b3421548 with title 'FNCS Community Cups - May 2025 - Official Rules' (Category: Competitive)
+2025-06-01 18:09:58,234 - DEBUG - Determined post id: b76979ec-72db-439d-a964-da72f688a69c
+2025-06-01 18:09:58,234 - DEBUG - New or updated competitive post detected: b76979ec-72db-439d-a964-da72f688a69c
+2025-06-01 18:09:58,234 - DEBUG - Determined post id: b76979ec-72db-439d-a964-da72f688a69c
+2025-06-01 18:09:58,235 - DEBUG - Built embed for post id b76979ec-72db-439d-a964-da72f688a69c with title 'Triumph in Fortnite’s Thunderbolts Cup to Get White Widow in Your Web!' (Category: Competitive)
+2025-06-01 18:09:58,235 - DEBUG - Determined post id: ac9102cf-cf6d-4217-8a05-17fbc151f013
+2025-06-01 18:09:58,235 - DEBUG - New or updated competitive post detected: ac9102cf-cf6d-4217-8a05-17fbc151f013
+2025-06-01 18:09:58,235 - DEBUG - Determined post id: ac9102cf-cf6d-4217-8a05-17fbc151f013
+2025-06-01 18:09:58,235 - DEBUG - Built embed for post id ac9102cf-cf6d-4217-8a05-17fbc151f013 with title 'Thunderbolts Cup - Official Rules' (Category: Competitive)
+2025-06-01 18:09:58,235 - DEBUG - Determined post id: cb270a49-6be8-4794-9cdb-0b2ade3192ae
+2025-06-01 18:09:58,235 - DEBUG - New or updated competitive post detected: cb270a49-6be8-4794-9cdb-0b2ade3192ae
+2025-06-01 18:09:58,235 - DEBUG - Determined post id: cb270a49-6be8-4794-9cdb-0b2ade3192ae
+2025-06-01 18:09:58,235 - DEBUG - Built embed for post id cb270a49-6be8-4794-9cdb-0b2ade3192ae with title 'Elite Zadie Reload Cups - Official Rules' (Category: Competitive)
+2025-06-01 18:09:58,236 - DEBUG - Determined post id: 11926b76-8bfd-4c44-9cf0-08e2896da8b8
+2025-06-01 18:09:58,236 - DEBUG - New or updated competitive post detected: 11926b76-8bfd-4c44-9cf0-08e2896da8b8
+2025-06-01 18:09:58,236 - DEBUG - Determined post id: 11926b76-8bfd-4c44-9cf0-08e2896da8b8
+2025-06-01 18:09:58,236 - DEBUG - Built embed for post id 11926b76-8bfd-4c44-9cf0-08e2896da8b8 with title 'FNCS 2025 - Major 2 Groups' (Category: Competitive)
+2025-06-01 18:09:58,236 - DEBUG - Determined post id: 39eeb68a-570b-4046-a628-6fec03e8753f
+2025-06-01 18:09:58,236 - DEBUG - New or updated competitive post detected: 39eeb68a-570b-4046-a628-6fec03e8753f
+2025-06-01 18:09:58,236 - DEBUG - Determined post id: 39eeb68a-570b-4046-a628-6fec03e8753f
+2025-06-01 18:09:58,236 - DEBUG - Built embed for post id 39eeb68a-570b-4046-a628-6fec03e8753f with title 'Champion PJ FNCS Cup - Official Rules' (Category: Competitive)
+2025-06-01 18:09:58,236 - DEBUG - Determined post id: 0839509b-9c35-4ce7-831f-daf96093c28f
+2025-06-01 18:09:58,237 - DEBUG - New or updated competitive post detected: 0839509b-9c35-4ce7-831f-daf96093c28f
+2025-06-01 18:09:58,237 - DEBUG - Determined post id: 0839509b-9c35-4ce7-831f-daf96093c28f
+2025-06-01 18:09:58,237 - DEBUG - Built embed for post id 0839509b-9c35-4ce7-831f-daf96093c28f with title 'Get Fortnite Twitch Drops and Compete in the Champion PJ FNCS Cup!' (Category: Competitive)
+2025-06-01 18:09:58,237 - DEBUG - Determined post id: e90f5e6b-00b6-4f11-8759-89caf87bf6d8
+2025-06-01 18:09:58,237 - DEBUG - Competitive post e90f5e6b-00b6-4f11-8759-89caf87bf6d8 already processed.
+2025-06-01 18:09:58,237 - DEBUG - Determined post id: f221c700-d02c-4c06-b69a-47edd1b54216
+2025-06-01 18:09:58,237 - DEBUG - Competitive post f221c700-d02c-4c06-b69a-47edd1b54216 already processed.
+2025-06-01 18:09:58,237 - DEBUG - Determined post id: 7f23e3cc-1ac0-4e3a-af5f-8b4137e991f1
+2025-06-01 18:09:58,237 - DEBUG - New or updated normal post detected: 7f23e3cc-1ac0-4e3a-af5f-8b4137e991f1
+2025-06-01 18:09:58,238 - DEBUG - Determined post id: 7f23e3cc-1ac0-4e3a-af5f-8b4137e991f1
+2025-06-01 18:09:58,238 - DEBUG - Built embed for post id 7f23e3cc-1ac0-4e3a-af5f-8b4137e991f1 with title 'Klombo and More Real-Life LEGO® Fortnite Sets Release Today!' (Category: Normal)
+2025-06-01 18:09:58,238 - DEBUG - Determined post id: 1cb301fd-837b-48cd-91d9-8c247299e107
+2025-06-01 18:09:58,238 - DEBUG - New or updated normal post detected: 1cb301fd-837b-48cd-91d9-8c247299e107
+2025-06-01 18:09:58,238 - DEBUG - Determined post id: 1cb301fd-837b-48cd-91d9-8c247299e107
+2025-06-01 18:09:58,238 - DEBUG - Built embed for post id 1cb301fd-837b-48cd-91d9-8c247299e107 with title 'Death Star Sabotage on June 7 — the Fortnite Live Event Concluding GALACTIC BATTLE' (Category: Normal)
+2025-06-01 18:09:58,238 - DEBUG - Determined post id: 724e6537-ed96-40aa-9826-c9fdcf2aa92c
+2025-06-01 18:09:58,239 - DEBUG - New or updated normal post detected: 724e6537-ed96-40aa-9826-c9fdcf2aa92c
+2025-06-01 18:09:58,239 - DEBUG - Determined post id: 724e6537-ed96-40aa-9826-c9fdcf2aa92c
+2025-06-01 18:09:58,239 - DEBUG - Built embed for post id 724e6537-ed96-40aa-9826-c9fdcf2aa92c with title 'Dance with Sabrina Carpenter in Fortnite!' (Category: Normal)
+2025-06-01 18:09:58,239 - DEBUG - Determined post id: aa3c7ab6-ec53-4078-ae3e-f556bd51340c
+2025-06-01 18:09:58,239 - DEBUG - New or updated normal post detected: aa3c7ab6-ec53-4078-ae3e-f556bd51340c
+2025-06-01 18:09:58,240 - DEBUG - Determined post id: aa3c7ab6-ec53-4078-ae3e-f556bd51340c
+2025-06-01 18:09:58,240 - DEBUG - Built embed for post id aa3c7ab6-ec53-4078-ae3e-f556bd51340c with title 'Fortnite Party Up: Unlock the Iridia Vayne Outfit!' (Category: Normal)
+2025-06-01 18:09:58,240 - DEBUG - Determined post id: 77aef3cb-05b9-4a28-b6ae-51d17419c82d
+2025-06-01 18:09:58,240 - DEBUG - New or updated normal post detected: 77aef3cb-05b9-4a28-b6ae-51d17419c82d
+2025-06-01 18:09:58,240 - DEBUG - Determined post id: 77aef3cb-05b9-4a28-b6ae-51d17419c82d
+2025-06-01 18:09:58,240 - DEBUG - Built embed for post id 77aef3cb-05b9-4a28-b6ae-51d17419c82d with title 'Darth Jar Jar Descends Upon the Fortnite Shop!' (Category: Normal)
+2025-06-01 18:09:58,240 - DEBUG - Determined post id: 9b6e24b0-fdb8-4a6b-b7a2-78297acee04b
+2025-06-01 18:09:58,242 - DEBUG - New or updated normal post detected: 9b6e24b0-fdb8-4a6b-b7a2-78297acee04b
+2025-06-01 18:09:58,242 - DEBUG - Determined post id: 9b6e24b0-fdb8-4a6b-b7a2-78297acee04b
+2025-06-01 18:09:58,242 - DEBUG - Built embed for post id 9b6e24b0-fdb8-4a6b-b7a2-78297acee04b with title 'This Will Be a Day Long Remembered: Speak with Darth Vader in Fortnite' (Category: Normal)
+2025-06-01 18:09:58,242 - DEBUG - Determined post id: 9e01198b-168f-431e-8779-18d10e1efb91
+2025-06-01 18:09:58,242 - DEBUG - New or updated normal post detected: 9e01198b-168f-431e-8779-18d10e1efb91
+2025-06-01 18:09:58,242 - DEBUG - Determined post id: 9e01198b-168f-431e-8779-18d10e1efb91
+2025-06-01 18:09:58,242 - DEBUG - Built embed for post id 9e01198b-168f-431e-8779-18d10e1efb91 with title 'Fortnite Ballistic v35.10: Test Grounds Update 2' (Category: Normal)
+2025-06-01 18:09:58,242 - DEBUG - Determined post id: 0b0b7b95-f0ef-4c83-bb40-d70bcb940075
+2025-06-01 18:09:58,242 - DEBUG - New or updated normal post detected: 0b0b7b95-f0ef-4c83-bb40-d70bcb940075
+2025-06-01 18:09:58,242 - DEBUG - Determined post id: 0b0b7b95-f0ef-4c83-bb40-d70bcb940075
+2025-06-01 18:09:58,242 - DEBUG - Built embed for post id 0b0b7b95-f0ef-4c83-bb40-d70bcb940075 with title 'Strap in Starfighter, Star Wars is Taking Over in Fortnite: GALACTIC BATTLE!' (Category: Normal)
+2025-06-01 18:09:58,242 - DEBUG - Determined post id: 647f3747-a056-40c3-b35a-aba2749dfb3e
+2025-06-01 18:09:58,243 - DEBUG - New or updated normal post detected: 647f3747-a056-40c3-b35a-aba2749dfb3e
+2025-06-01 18:09:58,243 - DEBUG - Determined post id: 647f3747-a056-40c3-b35a-aba2749dfb3e
+2025-06-01 18:09:58,243 - DEBUG - Built embed for post id 647f3747-a056-40c3-b35a-aba2749dfb3e with title 'Fortnite: GALACTIC BATTLE Competitive Details' (Category: Normal)
+2025-06-01 18:09:58,243 - DEBUG - Determined post id: 41096611-1e24-4542-8ff5-a7fc26575722
+2025-06-01 18:09:58,243 - DEBUG - New or updated normal post detected: 41096611-1e24-4542-8ff5-a7fc26575722
+2025-06-01 18:09:58,244 - DEBUG - Determined post id: 41096611-1e24-4542-8ff5-a7fc26575722
+2025-06-01 18:09:58,244 - DEBUG - Built embed for post id 41096611-1e24-4542-8ff5-a7fc26575722 with title 'Star Wars Hits LEGO® Fortnite Brick Life and Odyssey!' (Category: Normal)
+2025-06-01 18:09:58,244 - DEBUG - Determined post id: dbf84e2f-411d-4f76-9b47-f501a6804d6e
+2025-06-01 18:09:58,244 - DEBUG - New or updated normal post detected: dbf84e2f-411d-4f76-9b47-f501a6804d6e
+2025-06-01 18:09:58,244 - DEBUG - Determined post id: dbf84e2f-411d-4f76-9b47-f501a6804d6e
+2025-06-01 18:09:58,245 - DEBUG - Built embed for post id dbf84e2f-411d-4f76-9b47-f501a6804d6e with title 'Get a New Stormtrooper in Fortnite & Watch Two Episodes of Star Wars: Tales of the Underworld!' (Category: Normal)
+2025-06-01 18:09:58,245 - DEBUG - Determined post id: 697bcffa-6e35-4b94-8beb-6a1cbda45b4b
+2025-06-01 18:09:58,245 - DEBUG - New or updated normal post detected: 697bcffa-6e35-4b94-8beb-6a1cbda45b4b
+2025-06-01 18:09:58,245 - DEBUG - Determined post id: 697bcffa-6e35-4b94-8beb-6a1cbda45b4b
+2025-06-01 18:09:58,246 - DEBUG - Built embed for post id 697bcffa-6e35-4b94-8beb-6a1cbda45b4b with title 'Fortnite Island Creator Rules' (Category: Normal)
+2025-06-01 18:09:58,246 - DEBUG - Determined post id: 0e098a67-78b3-44e1-8c64-716b89ce4f04
+2025-06-01 18:09:58,246 - DEBUG - New or updated normal post detected: 0e098a67-78b3-44e1-8c64-716b89ce4f04
+2025-06-01 18:09:58,246 - DEBUG - Determined post id: 0e098a67-78b3-44e1-8c64-716b89ce4f04
+2025-06-01 18:09:58,247 - DEBUG - Built embed for post id 0e098a67-78b3-44e1-8c64-716b89ce4f04 with title 'Fortnite Ballistic - April 22, 2025 Status' (Category: Normal)
+2025-06-01 18:09:58,247 - DEBUG - Determined post id: 0307ea39-e478-4fca-aed7-e6e62df2422b
+2025-06-01 18:09:58,247 - DEBUG - New or updated creative post detected: 0307ea39-e478-4fca-aed7-e6e62df2422b
+2025-06-01 18:09:58,248 - DEBUG - Determined post id: 0307ea39-e478-4fca-aed7-e6e62df2422b
+2025-06-01 18:09:58,248 - DEBUG - Built embed for post id 0307ea39-e478-4fca-aed7-e6e62df2422b with title 'Evolving Fortnite Discover, Together' (Category: Creative)
+2025-06-01 18:09:58,248 - DEBUG - Determined post id: 9611ff4b-9ae1-47f9-9fd6-cebffccb3c1d
+2025-06-01 18:09:58,248 - DEBUG - New or updated creative post detected: 9611ff4b-9ae1-47f9-9fd6-cebffccb3c1d
+2025-06-01 18:09:58,249 - DEBUG - Determined post id: 9611ff4b-9ae1-47f9-9fd6-cebffccb3c1d
+2025-06-01 18:09:58,249 - DEBUG - Built embed for post id 9611ff4b-9ae1-47f9-9fd6-cebffccb3c1d with title 'Fortnite Ecosystem v35.20' (Category: Creative)
+2025-06-01 18:09:58,249 - DEBUG - Determined post id: 9ba52696-f316-4e46-9fdb-bd6f627dc8e6
+2025-06-01 18:09:58,249 - DEBUG - New or updated creative post detected: 9ba52696-f316-4e46-9fdb-bd6f627dc8e6
+2025-06-01 18:09:58,249 - DEBUG - Determined post id: 9ba52696-f316-4e46-9fdb-bd6f627dc8e6
+2025-06-01 18:09:58,250 - DEBUG - Built embed for post id 9ba52696-f316-4e46-9fdb-bd6f627dc8e6 with title 'Fortnite Data API Unlocks More Island Insights for Creators' (Category: Creative)
+2025-06-01 18:09:58,250 - DEBUG - Determined post id: ff0ed15d-43b4-459b-ba35-e7a3b67e3ecc
+2025-06-01 18:09:58,250 - DEBUG - New or updated creative post detected: ff0ed15d-43b4-459b-ba35-e7a3b67e3ecc
+2025-06-01 18:09:58,252 - DEBUG - Determined post id: ff0ed15d-43b4-459b-ba35-e7a3b67e3ecc
+2025-06-01 18:09:58,252 - DEBUG - Built embed for post id ff0ed15d-43b4-459b-ba35-e7a3b67e3ecc with title 'Create High-Caliber FPS Games in Fortnite with a New Gunfight Template in UEFN' (Category: Creative)
+2025-06-01 18:09:58,252 - DEBUG - Determined post id: c9d1d66d-7697-44e5-b7df-52104c705be9
+2025-06-01 18:09:58,252 - DEBUG - New or updated creative post detected: c9d1d66d-7697-44e5-b7df-52104c705be9
+2025-06-01 18:09:58,253 - DEBUG - Determined post id: c9d1d66d-7697-44e5-b7df-52104c705be9
+2025-06-01 18:09:58,253 - DEBUG - Built embed for post id c9d1d66d-7697-44e5-b7df-52104c705be9 with title 'Fortnite Ecosystem v35.10' (Category: Creative)
+2025-06-01 18:09:58,253 - DEBUG - Determined post id: 4e119f08-6b19-4977-868b-6961857e9a60
+2025-06-01 18:09:58,253 - DEBUG - New or updated creative post detected: 4e119f08-6b19-4977-868b-6961857e9a60
+2025-06-01 18:09:58,253 - DEBUG - Determined post id: 4e119f08-6b19-4977-868b-6961857e9a60
+2025-06-01 18:09:58,253 - DEBUG - Built embed for post id 4e119f08-6b19-4977-868b-6961857e9a60 with title 'The Walking Dead Universe Lurches into UEFN and Fortnite Creative' (Category: Creative)
+2025-06-01 18:09:58,253 - DEBUG - Determined post id: 3a333a4f-adbe-4574-bf0d-f11369cd1ee9
+2025-06-01 18:09:58,254 - DEBUG - New or updated creative post detected: 3a333a4f-adbe-4574-bf0d-f11369cd1ee9
+2025-06-01 18:09:58,254 - DEBUG - Determined post id: 3a333a4f-adbe-4574-bf0d-f11369cd1ee9
+2025-06-01 18:09:58,254 - DEBUG - Built embed for post id 3a333a4f-adbe-4574-bf0d-f11369cd1ee9 with title 'Experimental Feature: General Physics Brings Enhanced Interactivity to Fortnite Islands' (Category: Creative)
+2025-06-01 18:09:58,254 - DEBUG - Determined post id: 9bb72c8f-cad8-4610-95d1-66b18fdfc6cc
+2025-06-01 18:09:58,254 - DEBUG - New or updated creative post detected: 9bb72c8f-cad8-4610-95d1-66b18fdfc6cc
+2025-06-01 18:09:58,254 - DEBUG - Determined post id: 9bb72c8f-cad8-4610-95d1-66b18fdfc6cc
+2025-06-01 18:09:58,254 - DEBUG - Built embed for post id 9bb72c8f-cad8-4610-95d1-66b18fdfc6cc with title 'Fortnite Ecosystem v35.00' (Category: Creative)
+2025-06-01 18:09:58,254 - DEBUG - Determined post id: cf0e65a8-396d-4eb9-bd09-1edfaad0d31c
+2025-06-01 18:09:58,255 - DEBUG - New or updated creative post detected: cf0e65a8-396d-4eb9-bd09-1edfaad0d31c
+2025-06-01 18:09:58,255 - DEBUG - Determined post id: cf0e65a8-396d-4eb9-bd09-1edfaad0d31c
+2025-06-01 18:09:58,255 - DEBUG - Built embed for post id cf0e65a8-396d-4eb9-bd09-1edfaad0d31c with title 'A/B Test Thumbnails to Optimize Player Engagement in Your Fortnite Islands' (Category: Creative)
+2025-06-01 18:09:58,255 - DEBUG - Determined post id: c5711d6a-ab13-4926-8707-0d6300994f6a
+2025-06-01 18:09:58,255 - DEBUG - New or updated creative post detected: c5711d6a-ab13-4926-8707-0d6300994f6a
+2025-06-01 18:09:58,255 - DEBUG - Determined post id: c5711d6a-ab13-4926-8707-0d6300994f6a
+2025-06-01 18:09:58,255 - DEBUG - Built embed for post id c5711d6a-ab13-4926-8707-0d6300994f6a with title 'How Spiral House Created the “TMNT Dimensions [ROGUELIKE]” Series in Fortnite' (Category: Creative)
+2025-06-01 18:09:58,256 - DEBUG - Determined post id: 71ea6ade-767c-4ac6-a713-380ac4ba61ad
+2025-06-01 18:09:58,256 - DEBUG - New or updated creative post detected: 71ea6ade-767c-4ac6-a713-380ac4ba61ad
+2025-06-01 18:09:58,256 - DEBUG - Determined post id: 71ea6ade-767c-4ac6-a713-380ac4ba61ad
+2025-06-01 18:09:58,256 - DEBUG - Built embed for post id 71ea6ade-767c-4ac6-a713-380ac4ba61ad with title 'Expand Your TMNT Storytelling in Fortnite with New UEFN Tools' (Category: Creative)
+2025-06-01 18:09:58,256 - DEBUG - Determined post id: 17dbc073-4f25-46d0-b0af-5159376208a1
+2025-06-01 18:09:58,257 - DEBUG - New or updated creative post detected: 17dbc073-4f25-46d0-b0af-5159376208a1
+2025-06-01 18:09:58,257 - DEBUG - Determined post id: 17dbc073-4f25-46d0-b0af-5159376208a1
+2025-06-01 18:09:58,257 - DEBUG - Built embed for post id 17dbc073-4f25-46d0-b0af-5159376208a1 with title 'Fortnite Ecosystem v34.40' (Category: Creative)
+2025-06-01 18:09:58,257 - DEBUG - Determined post id: 4b17cc90-06f1-4f03-9f43-2380752e82e1
+2025-06-01 18:09:58,257 - DEBUG - New or updated creative post detected: 4b17cc90-06f1-4f03-9f43-2380752e82e1
+2025-06-01 18:09:58,257 - DEBUG - Determined post id: 4b17cc90-06f1-4f03-9f43-2380752e82e1
+2025-06-01 18:09:58,258 - DEBUG - Built embed for post id 4b17cc90-06f1-4f03-9f43-2380752e82e1 with title 'Fortnite Ecosystem v34.30' (Category: Creative)
+2025-06-01 18:09:58,258 - INFO - Found 37 new posts. Sending messages to channel.
+2025-06-01 18:09:58,723 - INFO - Sent a new blog post update.
+2025-06-01 18:10:01,858 - INFO - Sent a new blog post update.
+2025-06-01 18:10:04,338 - INFO - Sent a new blog post update.
+2025-06-01 18:10:07,240 - INFO - Sent a new blog post update.
+2025-06-01 18:10:09,669 - INFO - Sent a new blog post update.
+2025-06-01 18:10:12,328 - INFO - Sent a new blog post update.
+2025-06-01 18:10:14,892 - INFO - Sent a new blog post update.
+2025-06-01 18:10:17,345 - INFO - Sent a new blog post update.
+2025-06-01 18:10:21,545 - INFO - Sent a new blog post update.
+2025-06-01 18:10:24,045 - INFO - Sent a new blog post update.
+2025-06-01 18:10:26,441 - INFO - Sent a new blog post update.
+2025-06-01 18:10:28,876 - INFO - Sent a new blog post update.
+2025-06-01 18:10:31,453 - INFO - Sent a new blog post update.
+2025-06-01 18:10:33,911 - INFO - Sent a new blog post update.
+2025-06-01 18:10:36,451 - INFO - Sent a new blog post update.
+2025-06-01 18:10:38,941 - INFO - Sent a new blog post update.
+2025-06-01 18:10:41,368 - INFO - Sent a new blog post update.
+2025-06-01 18:10:43,926 - INFO - Sent a new blog post update.
+2025-06-01 18:10:46,523 - INFO - Sent a new blog post update.
+2025-06-01 18:10:49,003 - INFO - Sent a new blog post update.
+2025-06-01 18:10:51,459 - INFO - Sent a new blog post update.
+2025-06-01 18:10:54,201 - INFO - Sent a new blog post update.
+2025-06-01 18:10:56,710 - INFO - Sent a new blog post update.
+2025-06-01 18:10:59,210 - INFO - Sent a new blog post update.
+2025-06-01 18:11:01,664 - INFO - Sent a new blog post update.
+2025-06-01 18:11:04,166 - INFO - Sent a new blog post update.
+2025-06-01 18:11:06,769 - INFO - Sent a new blog post update.
+2025-06-01 18:11:09,256 - INFO - Sent a new blog post update.
+2025-06-01 18:11:11,699 - INFO - Sent a new blog post update.
+2025-06-01 18:11:14,110 - INFO - Sent a new blog post update.
+2025-06-01 18:11:16,519 - INFO - Sent a new blog post update.
+2025-06-01 18:11:18,961 - INFO - Sent a new blog post update.
+2025-06-01 18:11:21,501 - INFO - Sent a new blog post update.
+2025-06-01 18:11:24,367 - INFO - Sent a new blog post update.
+2025-06-01 18:11:26,783 - INFO - Sent a new blog post update.
+2025-06-01 18:11:29,239 - INFO - Sent a new blog post update.
+2025-06-01 18:11:31,827 - INFO - Sent a new blog post update.
+2025-06-01 18:11:33,831 - DEBUG - Saved old data to old_data.json
+2025-06-01 18:11:33,831 - DEBUG - Polling APIs for new posts.
+2025-06-01 18:11:33,834 - DEBUG - Fetching posts from https://www.fortnite.com/competitive/api/blog/getPosts?offset=0&category=&locale=en&rootPageSlug=news&postsPerPage=0
+2025-06-01 18:11:33,834 - DEBUG - Starting new HTTPS connection (1): www.fortnite.com:443
+2025-06-01 18:11:35,295 - DEBUG - https://www.fortnite.com:443 "GET /competitive/api/blog/getPosts?offset=0&category=&locale=en&rootPageSlug=news&postsPerPage=0 HTTP/1.1" 200 None
+2025-06-01 18:11:35,617 - DEBUG - Fetched 13 posts from https://www.fortnite.com/competitive/api/blog/getPosts?offset=0&category=&locale=en&rootPageSlug=news&postsPerPage=0
+2025-06-01 18:11:35,620 - DEBUG - Fetching posts from https://www.fortnite.com/api/blog/getPosts?category=&locale=en&offset=0&postsPerPage=0&rootPageSlug=blog&sessionInvalidated=true
+2025-06-01 18:11:35,621 - DEBUG - Starting new HTTPS connection (1): www.fortnite.com:443
+2025-06-01 18:11:36,026 - DEBUG - https://www.fortnite.com:443 "GET /api/blog/getPosts?category=&locale=en&offset=0&postsPerPage=0&rootPageSlug=blog&sessionInvalidated=true HTTP/1.1" 200 None
+2025-06-01 18:11:36,028 - DEBUG - Fetched 13 posts from https://www.fortnite.com/api/blog/getPosts?category=&locale=en&offset=0&postsPerPage=0&rootPageSlug=blog&sessionInvalidated=true
+2025-06-01 18:11:36,031 - DEBUG - Fetching posts from https://create.fortnite.com/api/cms/v1/articles/
+2025-06-01 18:11:36,031 - DEBUG - Starting new HTTPS connection (1): create.fortnite.com:443
+2025-06-01 18:11:36,939 - DEBUG - https://create.fortnite.com:443 "GET /api/cms/v1/articles/ HTTP/1.1" 200 92941
+2025-06-01 18:11:37,186 - DEBUG - Fetched 13 posts from https://create.fortnite.com/api/cms/v1/articles/
+2025-06-01 18:11:37,186 - DEBUG - Determined post id: b64afc8c-2e79-41d9-9595-ed5d3b5e4de8
+2025-06-01 18:11:37,187 - DEBUG - Competitive post b64afc8c-2e79-41d9-9595-ed5d3b5e4de8 already processed.
+2025-06-01 18:11:37,187 - DEBUG - Determined post id: c080af4b-1c30-4199-bc3e-ded301573ee1
+2025-06-01 18:11:37,187 - DEBUG - Competitive post c080af4b-1c30-4199-bc3e-ded301573ee1 already processed.
+2025-06-01 18:11:37,188 - DEBUG - Determined post id: d8ebb6d1-e10a-4fd2-bb11-1a0860ff42b9
+2025-06-01 18:11:37,188 - DEBUG - Competitive post d8ebb6d1-e10a-4fd2-bb11-1a0860ff42b9 already processed.
+2025-06-01 18:11:37,188 - DEBUG - Determined post id: 38986877-20ab-418e-953f-a97c9174d5c2
+2025-06-01 18:11:37,188 - DEBUG - Competitive post 38986877-20ab-418e-953f-a97c9174d5c2 already processed.
+2025-06-01 18:11:37,188 - DEBUG - Determined post id: fef7c779-57b5-4fcb-8062-1dc1b3421548
+2025-06-01 18:11:37,189 - DEBUG - Competitive post fef7c779-57b5-4fcb-8062-1dc1b3421548 already processed.
+2025-06-01 18:11:37,189 - DEBUG - Determined post id: b76979ec-72db-439d-a964-da72f688a69c
+2025-06-01 18:11:37,189 - DEBUG - Competitive post b76979ec-72db-439d-a964-da72f688a69c already processed.
+2025-06-01 18:11:37,189 - DEBUG - Determined post id: ac9102cf-cf6d-4217-8a05-17fbc151f013
+2025-06-01 18:11:37,189 - DEBUG - Competitive post ac9102cf-cf6d-4217-8a05-17fbc151f013 already processed.
+2025-06-01 18:11:37,189 - DEBUG - Determined post id: cb270a49-6be8-4794-9cdb-0b2ade3192ae
+2025-06-01 18:11:37,189 - DEBUG - Competitive post cb270a49-6be8-4794-9cdb-0b2ade3192ae already processed.
+2025-06-01 18:11:37,190 - DEBUG - Determined post id: 11926b76-8bfd-4c44-9cf0-08e2896da8b8
+2025-06-01 18:11:37,190 - DEBUG - Competitive post 11926b76-8bfd-4c44-9cf0-08e2896da8b8 already processed.
+2025-06-01 18:11:37,190 - DEBUG - Determined post id: 39eeb68a-570b-4046-a628-6fec03e8753f
+2025-06-01 18:11:37,190 - DEBUG - Competitive post 39eeb68a-570b-4046-a628-6fec03e8753f already processed.
+2025-06-01 18:11:37,191 - DEBUG - Determined post id: 0839509b-9c35-4ce7-831f-daf96093c28f
+2025-06-01 18:11:37,191 - DEBUG - Competitive post 0839509b-9c35-4ce7-831f-daf96093c28f already processed.
+2025-06-01 18:11:37,191 - DEBUG - Determined post id: e90f5e6b-00b6-4f11-8759-89caf87bf6d8
+2025-06-01 18:11:37,191 - DEBUG - Competitive post e90f5e6b-00b6-4f11-8759-89caf87bf6d8 already processed.
+2025-06-01 18:11:37,191 - DEBUG - Determined post id: f221c700-d02c-4c06-b69a-47edd1b54216
+2025-06-01 18:11:37,191 - DEBUG - Competitive post f221c700-d02c-4c06-b69a-47edd1b54216 already processed.
+2025-06-01 18:11:37,191 - DEBUG - Determined post id: 7f23e3cc-1ac0-4e3a-af5f-8b4137e991f1
+2025-06-01 18:11:37,191 - DEBUG - Normal post 7f23e3cc-1ac0-4e3a-af5f-8b4137e991f1 already processed.
+2025-06-01 18:11:37,191 - DEBUG - Determined post id: 1cb301fd-837b-48cd-91d9-8c247299e107
+2025-06-01 18:11:37,191 - DEBUG - Normal post 1cb301fd-837b-48cd-91d9-8c247299e107 already processed.
+2025-06-01 18:11:37,192 - DEBUG - Determined post id: 724e6537-ed96-40aa-9826-c9fdcf2aa92c
+2025-06-01 18:11:37,192 - DEBUG - Normal post 724e6537-ed96-40aa-9826-c9fdcf2aa92c already processed.
+2025-06-01 18:11:37,192 - DEBUG - Determined post id: aa3c7ab6-ec53-4078-ae3e-f556bd51340c
+2025-06-01 18:11:37,192 - DEBUG - Normal post aa3c7ab6-ec53-4078-ae3e-f556bd51340c already processed.
+2025-06-01 18:11:37,192 - DEBUG - Determined post id: 77aef3cb-05b9-4a28-b6ae-51d17419c82d
+2025-06-01 18:11:37,192 - DEBUG - Normal post 77aef3cb-05b9-4a28-b6ae-51d17419c82d already processed.
+2025-06-01 18:11:37,192 - DEBUG - Determined post id: 9b6e24b0-fdb8-4a6b-b7a2-78297acee04b
+2025-06-01 18:11:37,193 - DEBUG - Normal post 9b6e24b0-fdb8-4a6b-b7a2-78297acee04b already processed.
+2025-06-01 18:11:37,193 - DEBUG - Determined post id: 9e01198b-168f-431e-8779-18d10e1efb91
+2025-06-01 18:11:37,193 - DEBUG - Normal post 9e01198b-168f-431e-8779-18d10e1efb91 already processed.
+2025-06-01 18:11:37,193 - DEBUG - Determined post id: 0b0b7b95-f0ef-4c83-bb40-d70bcb940075
+2025-06-01 18:11:37,193 - DEBUG - Normal post 0b0b7b95-f0ef-4c83-bb40-d70bcb940075 already processed.
+2025-06-01 18:11:37,194 - DEBUG - Determined post id: 647f3747-a056-40c3-b35a-aba2749dfb3e
+2025-06-01 18:11:37,196 - DEBUG - Normal post 647f3747-a056-40c3-b35a-aba2749dfb3e already processed.
+2025-06-01 18:11:37,196 - DEBUG - Determined post id: 41096611-1e24-4542-8ff5-a7fc26575722
+2025-06-01 18:11:37,196 - DEBUG - Normal post 41096611-1e24-4542-8ff5-a7fc26575722 already processed.
+2025-06-01 18:11:37,196 - DEBUG - Determined post id: dbf84e2f-411d-4f76-9b47-f501a6804d6e
+2025-06-01 18:11:37,197 - DEBUG - Normal post dbf84e2f-411d-4f76-9b47-f501a6804d6e already processed.
+2025-06-01 18:11:37,197 - DEBUG - Determined post id: 697bcffa-6e35-4b94-8beb-6a1cbda45b4b
+2025-06-01 18:11:37,197 - DEBUG - Normal post 697bcffa-6e35-4b94-8beb-6a1cbda45b4b already processed.
+2025-06-01 18:11:37,197 - DEBUG - Determined post id: 0e098a67-78b3-44e1-8c64-716b89ce4f04
+2025-06-01 18:11:37,197 - DEBUG - Normal post 0e098a67-78b3-44e1-8c64-716b89ce4f04 already processed.
+2025-06-01 18:11:37,198 - DEBUG - Determined post id: 0307ea39-e478-4fca-aed7-e6e62df2422b
+2025-06-01 18:11:37,203 - DEBUG - Creative post 0307ea39-e478-4fca-aed7-e6e62df2422b already processed.
+2025-06-01 18:11:37,203 - DEBUG - Determined post id: 9611ff4b-9ae1-47f9-9fd6-cebffccb3c1d
+2025-06-01 18:11:37,203 - DEBUG - Creative post 9611ff4b-9ae1-47f9-9fd6-cebffccb3c1d already processed.
+2025-06-01 18:11:37,204 - DEBUG - Determined post id: 9ba52696-f316-4e46-9fdb-bd6f627dc8e6
+2025-06-01 18:11:37,204 - DEBUG - Creative post 9ba52696-f316-4e46-9fdb-bd6f627dc8e6 already processed.
+2025-06-01 18:11:37,205 - DEBUG - Determined post id: ff0ed15d-43b4-459b-ba35-e7a3b67e3ecc
+2025-06-01 18:11:37,205 - DEBUG - Creative post ff0ed15d-43b4-459b-ba35-e7a3b67e3ecc already processed.
+2025-06-01 18:11:37,206 - DEBUG - Determined post id: c9d1d66d-7697-44e5-b7df-52104c705be9
+2025-06-01 18:11:37,206 - DEBUG - Creative post c9d1d66d-7697-44e5-b7df-52104c705be9 already processed.
+2025-06-01 18:11:37,206 - DEBUG - Determined post id: 4e119f08-6b19-4977-868b-6961857e9a60
+2025-06-01 18:11:37,206 - DEBUG - Creative post 4e119f08-6b19-4977-868b-6961857e9a60 already processed.
+2025-06-01 18:11:37,206 - DEBUG - Determined post id: 3a333a4f-adbe-4574-bf0d-f11369cd1ee9
+2025-06-01 18:11:37,206 - DEBUG - Creative post 3a333a4f-adbe-4574-bf0d-f11369cd1ee9 already processed.
+2025-06-01 18:11:37,207 - DEBUG - Determined post id: 9bb72c8f-cad8-4610-95d1-66b18fdfc6cc
+2025-06-01 18:11:37,209 - DEBUG - Creative post 9bb72c8f-cad8-4610-95d1-66b18fdfc6cc already processed.
+2025-06-01 18:11:37,209 - DEBUG - Determined post id: cf0e65a8-396d-4eb9-bd09-1edfaad0d31c
+2025-06-01 18:11:37,209 - DEBUG - Creative post cf0e65a8-396d-4eb9-bd09-1edfaad0d31c already processed.
+2025-06-01 18:11:37,209 - DEBUG - Determined post id: c5711d6a-ab13-4926-8707-0d6300994f6a
+2025-06-01 18:11:37,210 - DEBUG - Creative post c5711d6a-ab13-4926-8707-0d6300994f6a already processed.
+2025-06-01 18:11:37,210 - DEBUG - Determined post id: 71ea6ade-767c-4ac6-a713-380ac4ba61ad
+2025-06-01 18:11:37,210 - DEBUG - Creative post 71ea6ade-767c-4ac6-a713-380ac4ba61ad already processed.
+2025-06-01 18:11:37,210 - DEBUG - Determined post id: 17dbc073-4f25-46d0-b0af-5159376208a1
+2025-06-01 18:11:37,210 - DEBUG - Creative post 17dbc073-4f25-46d0-b0af-5159376208a1 already processed.
+2025-06-01 18:11:37,210 - DEBUG - Determined post id: 4b17cc90-06f1-4f03-9f43-2380752e82e1
+2025-06-01 18:11:37,210 - DEBUG - Creative post 4b17cc90-06f1-4f03-9f43-2380752e82e1 already processed.
+2025-06-01 18:11:37,210 - INFO - No new posts found.

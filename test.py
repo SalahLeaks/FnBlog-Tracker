@@ -19,13 +19,14 @@ logging.basicConfig(
 )
 
 
-BOT_TOKEN = "YOURS"
-TARGET_CHANNEL_ID = YOURS
-PING_USER_ID  =   YOURS
+BOT_TOKEN = ""
+TARGET_CHANNEL_ID = 
+PING_USER_ID  =   
 
-# API endpoints for Competitive and Normal blog posts
+# API endpoints for Competitive, Normal, and Creative blog posts
 COMPETITIVE_API = "https://www.fortnite.com/competitive/api/blog/getPosts?offset=0&category=&locale=en&rootPageSlug=news&postsPerPage=0"
-NORMAL_API = "https://www.fortnite.com/api/blog/getPosts?category=&locale=en&offset=0&postsPerPage=0&rootPageSlug=blog&sessionInvalidated=true"
+NORMAL_API      = "https://www.fortnite.com/api/blog/getPosts?category=&locale=en&offset=0&postsPerPage=0&rootPageSlug=blog&sessionInvalidated=true"
+CREATIVE_API    = "https://create.fortnite.com/api/cms/v1/articles/"  # New Creative API
 
 # File to store data of posts that have already been processed (only hashes and trending info)
 DATA_FILE = "old_data.json"
@@ -60,6 +61,7 @@ def fetch_posts(url):
         response = scraper.get(url)
         response.raise_for_status()
         posts = response.json().get("blogList", [])
+        # For the Creative API, the structure is the same, so "blogList" still applies.
         logging.debug("Fetched %d posts from %s", len(posts), url)
         return posts
     except Exception as e:
@@ -149,7 +151,7 @@ def build_embed(post, category=""):
     # Add a field with a clickable "Read More" link
     embed.add_field(name="Read More", value=f"[Visit Blog Post]({link})", inline=False)
     
-    logging.debug("Built embed for post id %s with title '%s'", get_post_id(post), title)
+    logging.debug("Built embed for post id %s with title '%s' (Category: %s)", get_post_id(post), title, category)
     return embed
 
 class BlogMonitorBot(discord.Client):
@@ -174,14 +176,14 @@ class BlogMonitorBot(discord.Client):
 
         loop = asyncio.get_running_loop()
         competitive_posts = await loop.run_in_executor(None, fetch_posts, COMPETITIVE_API)
-        normal_posts = await loop.run_in_executor(None, fetch_posts, NORMAL_API)
+        normal_posts      = await loop.run_in_executor(None, fetch_posts, NORMAL_API)
+        creative_posts    = await loop.run_in_executor(None, fetch_posts, CREATIVE_API)  # Fetch Creative posts
 
         # Process Competitive posts
         for post in competitive_posts:
             post_id = get_post_id(post)
             if post_id:
                 trending = post.get("trending", False)
-                # Compare using only the hash (post_id) and trending flag
                 if post_id not in self.old_data or self.old_data[post_id].get("trending") != trending:
                     logging.debug("New or updated competitive post detected: %s", post_id)
                     new_embeds.append((build_embed(post, category="Competitive"), MESSAGE_DELAY))
@@ -194,13 +196,24 @@ class BlogMonitorBot(discord.Client):
             post_id = get_post_id(post)
             if post_id:
                 trending = post.get("trending", False)
-                # Compare using only the hash (post_id) and trending flag
                 if post_id not in self.old_data or self.old_data[post_id].get("trending") != trending:
                     logging.debug("New or updated normal post detected: %s", post_id)
                     new_embeds.append((build_embed(post, category="Normal"), MESSAGE_DELAY))
                     self.old_data[post_id] = {"trending": trending}
                 else:
                     logging.debug("Normal post %s already processed.", post_id)
+
+        # Process Creative posts (same logic as Competitive and Normal)
+        for post in creative_posts:
+            post_id = get_post_id(post)
+            if post_id:
+                trending = post.get("trending", False)
+                if post_id not in self.old_data or self.old_data[post_id].get("trending") != trending:
+                    logging.debug("New or updated creative post detected: %s", post_id)
+                    new_embeds.append((build_embed(post, category="Creative"), MESSAGE_DELAY))
+                    self.old_data[post_id] = {"trending": trending}
+                else:
+                    logging.debug("Creative post %s already processed.", post_id)
 
         if new_embeds:
             logging.info("Found %d new posts. Sending messages to channel.", len(new_embeds))
