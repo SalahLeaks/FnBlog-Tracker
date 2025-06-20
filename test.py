@@ -8,7 +8,6 @@ import asyncio
 import discord
 from discord.ext import tasks
 
-# Configure logging
 logging.basicConfig(
     level=logging.DEBUG,
     format="%(asctime)s - %(levelname)s - %(message)s",
@@ -23,15 +22,13 @@ BOT_TOKEN = ""
 TARGET_CHANNEL_ID = 
 PING_USER_ID  =   
 
-# API endpoints for Competitive, Normal, and Creative blog posts
 COMPETITIVE_API = "https://www.fortnite.com/competitive/api/blog/getPosts?offset=0&category=&locale=en&rootPageSlug=news&postsPerPage=0"
 NORMAL_API      = "https://www.fortnite.com/api/blog/getPosts?category=&locale=en&offset=0&postsPerPage=0&rootPageSlug=blog&sessionInvalidated=true"
-CREATIVE_API    = "https://create.fortnite.com/api/cms/v1/articles/"  # New Creative API
+CREATIVE_API    = "https://create.fortnite.com/api/cms/v1/articles/"  
 
-# File to store data of posts that have already been processed (only hashes and trending info)
 DATA_FILE = "old_data.json"
 
-# Delay in seconds between sending each message (if needed)
+# Seconds
 MESSAGE_DELAY = 2
 
 def load_old_data():
@@ -74,10 +71,6 @@ def get_post_id(post):
     return post_id
 
 def extract_description(meta_tags):
-    """
-    Extract the description from the meta tags string.
-    Looks for: <meta name="description" content="...">
-    """
     search_key = 'meta name="description"'
     if search_key in meta_tags:
         try:
@@ -91,17 +84,6 @@ def extract_description(meta_tags):
     return None
 
 def build_embed(post, category=""):
-    """
-    Build a discord.Embed object from a blog post with the following modifications:
-      - The title is plain (no hyperlink) and removes "the competitive Fortnite team" text.
-      - The description is only set if a proper description is available.
-      - The embed includes two images:
-           * Thumbnail (top right) from the API's "image" field if it contains "576x576".
-           * Main image from the API's "trendingImage" field.
-      - The Author is always added as a standard field with the field name "Author".
-      - The "Category" footer is removed.
-    """
-    # Title (remove unwanted text)
     title = post.get("title") or post.get("gridTitle") or "No Title"
     title = title.replace("the competitive Fortnite team", "").strip()
     
@@ -113,11 +95,8 @@ def build_embed(post, category=""):
         if description and len(description) > 1000:
             description = description[:997] + "..."
     
-    # Remove description if it contains unwanted formatting like <p style=
-    if description and "<p style=" in description:
         description = None
 
-    # Determine the post link.
     if post.get("link") and post.get("link").startswith("http"):
         link = post.get("link")
     else:
@@ -127,28 +106,22 @@ def build_embed(post, category=""):
         else:
             link = "https://www.fortnite.com/"
     
-    # Create embed without hyperlink on title
     embed = discord.Embed(title=title, color=0)
     
-    # Set description only if a proper description exists.
     if description:
         embed.description = description
 
-    # Always add Author as a separate field with a bold field title.
     author = post.get("author") or "Unknown"
     embed.add_field(name="Author", value=author, inline=False)
     
-    # Set the thumbnail image (top right) from the "image" field if it contains "576x576"
     image_url = post.get("image")
     if image_url and "576x576" in image_url:
         embed.set_thumbnail(url=image_url)
     
-    # Set the main image using the trendingImage field
     trending_image = post.get("trendingImage")
     if trending_image:
         embed.set_image(url=trending_image)
     
-    # Add a field with a clickable "Read More" link
     embed.add_field(name="Read More", value=f"[Visit Blog Post]({link})", inline=False)
     
     logging.debug("Built embed for post id %s with title '%s' (Category: %s)", get_post_id(post), title, category)
@@ -177,9 +150,8 @@ class BlogMonitorBot(discord.Client):
         loop = asyncio.get_running_loop()
         competitive_posts = await loop.run_in_executor(None, fetch_posts, COMPETITIVE_API)
         normal_posts      = await loop.run_in_executor(None, fetch_posts, NORMAL_API)
-        creative_posts    = await loop.run_in_executor(None, fetch_posts, CREATIVE_API)  # Fetch Creative posts
+        creative_posts    = await loop.run_in_executor(None, fetch_posts, CREATIVE_API)  
 
-        # Process Competitive posts
         for post in competitive_posts:
             post_id = get_post_id(post)
             if post_id:
@@ -191,7 +163,6 @@ class BlogMonitorBot(discord.Client):
                 else:
                     logging.debug("Competitive post %s already processed.", post_id)
 
-        # Process Normal posts
         for post in normal_posts:
             post_id = get_post_id(post)
             if post_id:
@@ -203,7 +174,6 @@ class BlogMonitorBot(discord.Client):
                 else:
                     logging.debug("Normal post %s already processed.", post_id)
 
-        # Process Creative posts (same logic as Competitive and Normal)
         for post in creative_posts:
             post_id = get_post_id(post)
             if post_id:
@@ -219,8 +189,7 @@ class BlogMonitorBot(discord.Client):
             logging.info("Found %d new posts. Sending messages to channel.", len(new_embeds))
             for embed, delay in new_embeds:
                 try:
-                    # Send only the embed message without additional text
-                    await self.channel.send(content=f"<@{PING_USER_ID}>", embed=embed)
+                    await self.channel.send(content=f"<@&{PING_USER_ID}>", embed=embed)
                     logging.info("Sent a new blog post update.")
                     await asyncio.sleep(delay)
                 except Exception as e:
@@ -233,10 +202,8 @@ class BlogMonitorBot(discord.Client):
     async def before_blog_monitor_loop(self):
         await self.wait_until_ready()
 
-# Set up bot intents (adjust if necessary)
 intents = discord.Intents.default()
 intents.message_content = True
 
-# Create and run the bot
 bot = BlogMonitorBot(intents=intents)
 bot.run(BOT_TOKEN)
