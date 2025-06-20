@@ -17,7 +17,6 @@ logging.basicConfig(
     ]
 )
 
-
 BOT_TOKEN = ""
 TARGET_CHANNEL_ID = 
 PING_USER_ID  =   
@@ -95,6 +94,7 @@ def build_embed(post, category=""):
         if description and len(description) > 1000:
             description = description[:997] + "..."
     
+    if description and "<p style=" in description:
         description = None
 
     if post.get("link") and post.get("link").startswith("http"):
